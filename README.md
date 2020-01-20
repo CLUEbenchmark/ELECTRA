@@ -39,7 +39,7 @@
 
 说明：本版本 仅 验证 整体流程是否 正确 包括 dynamic-masking、基于generator的扰动词生成 等
 
-CLUE 结果(electra-all-mask-disc-tiny)：
+CLUE 结果(electra-all-mask-disc-tiny)：batch_size=32,长文本max_length=256,其余为128
 
 模型配置
 
