@@ -22,6 +22,16 @@
      - adversarial contrastive estimation（使用REINFORECE优化）
 7. 支持多种预训练模型结构 如 ALBERT、BERT 等
 
+## 使用说明
+模型参数 已经 转成 google-bert 官方 代码 加载（本地已经 将 discriminator 和 generator 分别 导出）
+
+可以直接使用CLUE的评测代码训练和测试
+
+### finetuning tips
+1. learning rate 设置为 1e-4
+2. epoch=10, 对于分类任务(TNEWS,IFLYTEK,epoch=20)
+其余超参数与 bert-base finetuning相同
+
 # 模型路径
 ## 当前版本 beta
 模型路径 google-drive：https://drive.google.com/open?id=1-cOGrTX6ndGBWCPM0Alik6vVv4Bma1cD
@@ -40,7 +50,11 @@ CLUE 结果(electra-all-mask-disc-tiny)：
 
 ![image](http://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.png)
 
-
+## 当前版本可能存在的问题
+1. dynamic-masking 由于随机性，难以做到 whole-word-masking
+2. discriminator训练过程中 即使 加大 鉴别器的loss，其 梯度更新依然缓慢，最终，whole-token的acc=0.93
+     - 15% 的mask，generator最多60%的准确率，所以，replaced token占比由 15% 下降到 6%左右
+     - 鉴别器最终的acc只有0.93（相当于 全部预测成 original token）
 
 # 说明
 代码正在整理中
