@@ -31,6 +31,7 @@
 1. learning rate 设置为 1e-4
 2. epoch=10, 对于分类任务(TNEWS,IFLYTEK,epoch=20)
 其余超参数与 bert-base finetuning相同
+3. 由于使用roberta的方式训练，finetuning的时候 最好segment_ids都等于0（即使是CMNLI等句子对的任务）
 
 # 模型路径
 ## 当前版本 beta
