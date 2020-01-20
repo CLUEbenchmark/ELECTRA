@@ -26,12 +26,14 @@
 # 模型路径
 ## 当前版本 beta
 模型路径 google-drive：https://drive.google.com/open?id=1-cOGrTX6ndGBWCPM0Alik6vVv4Bma1cD
+
 说明：本版本 仅 验证 整体流程是否 正确 包括 dynamic-masking、基于generator的扰动词生成 等
 CLUE 结果(electra-all-mask-disc-tiny)：
 1. online-dynamic-masking
 2. discriminator和generator 不共享任何参数
 3. discriminator和generator的loss的权重为：10:1
 4. discriminator使用whole-token 优化
+5. 结果：
 ![image](http://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.png)
 
 
