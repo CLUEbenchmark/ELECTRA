@@ -7,8 +7,8 @@
 # 模型说明
 ## 已完成
 1. online-dynamic-masking：
-  1. 采样 mask 位置
-  2. sample tokens from multinomial-discributions（这里，使用均匀分布 输出 多项式分布的logits；可以使用其他先验分布采样）
+  - 采样 mask 位置
+  - sample tokens from multinomial-discributions（这里，使用均匀分布 输出 多项式分布的logits；可以使用其他先验分布采样）
 2. generator 使用 MLM 优化，discriminator 使用 whole-token 的binary-classification
 3. discriminator和generator 不共享任何参数
 4. discriminator和generator的loss的权重为：10:1
