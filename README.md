@@ -34,9 +34,10 @@
   ffn-size：1200
   num_heads:12
 2. CLUE 结果：
-![image](http://github.com/ihttps://github.com/CLUEbenchmark/ELECTRA/raw/master/images/electra_tiny_beta_all_mask.png)
+![image](http://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.png)
 
 
 
 # 说明
 代码正在整理中
+
