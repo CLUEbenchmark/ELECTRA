@@ -48,6 +48,7 @@ CLUE 结果(electra-all-mask-disc-tiny)：batch_size=32,长文本max_length=256,
 3. discriminator和generator的loss的权重为：10:1
 4. discriminator使用whole-token 优化
 5. 结果：
+
 <img src="http://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.jpg"  width="60%" height="60%" />
 ## 当前版本可能存在的问题
 1. dynamic-masking 由于随机性，难以做到 whole-word-masking
