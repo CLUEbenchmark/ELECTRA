@@ -3,6 +3,9 @@
 中文 预训练 ELECTREA 模型: 基于对抗学习 pretrain Chinese Model
 (非 官方版本)
 
+<img src="https://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.jpg"  width="60%" height="60%"/>
+
+
 # 模型说明
 ## 已完成
 
@@ -49,7 +52,6 @@ CLUE 结果(electra-all-mask-disc-tiny)：batch_size=32,长文本max_length=256,
 4. discriminator使用whole-token 优化
 5. 结果：
 
-<img src="http://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.jpg"  width="60%" height="60%" />
 ## 当前版本可能存在的问题
 1. dynamic-masking 由于随机性，难以做到 whole-word-masking
 2. discriminator训练过程中 即使 加大 鉴别器的loss，其 梯度更新依然缓慢，最终，whole-token的acc=0.93
