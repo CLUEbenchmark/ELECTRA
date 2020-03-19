@@ -3,9 +3,6 @@
 中文 预训练 ELECTREA 模型: 基于对抗学习 pretrain Chinese Model
 
 
-<img src="https://github.com/CLUEbenchmark/ELECTRA/blob/master/images/electra_tiny_beta_all_mask.jpg"  width="70%" height="70%"/>
-
-
 code Repost from google official code: https://github.com/google-research/electra
 
 具体使用说明：参考 官方链接
