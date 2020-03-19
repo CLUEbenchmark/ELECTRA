@@ -10,20 +10,20 @@ code Repost from google official code: https://github.com/google-research/electr
 
 具体使用说明：参考 官方链接
 
-# electra Chinese tiny模型路径
+# Electra Chinese tiny模型路径
 electra-tiny <a href='https://drive.google.com/file/d/1UP4byt4-kgenwST0KvyMYNbln6FfaSLp/view?usp=sharing'>google-drive</a>
 
 ## 模型说明
 1. 与 tinyBERT 的 配置相同
 2. generator 为 discriminator的 1/4
 
-# how to use official code
-## steps
+# How to use official code
+## Steps
 1. 修改 configure_pretraining.py 里面的 数据路径、tpu、gpu 配置
 2. 修改 model_size：可在 code/util/training_utils.py 里面 自行定义模型大小
 3. 数据输入格式：原始的input_ids, input_mask, segment_ids，训练过程中会在线 做 uniform mask sampling（不需要离线 生成 masked input ids）
 
-# performance
+# Performance
 ## gen+disc:
 electra-tiny
 | metric | value | 
@@ -40,7 +40,7 @@ electra-tiny
 
 The model are trained on CLUE 10G Chinese Corpus with 1M-steps
 
-## downstream finetuning on CLUE benchmark:
+## Downstream finetuning on <a href='https://www.cluebenchmarks.com/small_model_classification.html'>CLUE benchmark</a>:
 注：only use pretrained electra-tiny with layer-wise learning rate decay without any distilaltion、data-augmentation. learning rate is set to 1e-4 for each task and run 10-epochs. (According to official results, the results may have large variance)
 
 |     | AFQMC | TNEWS | IFLYTEK | CMNLI  | WSC  | CSL |
@@ -54,5 +54,6 @@ The model are trained on CLUE 10G Chinese Corpus with 1M-steps
 2. gen、disc的规模 配比 比较hacky，与 mask的方法 等相关
 
 
+<a href='https://www.cluebenchmarks.com/NLPCC.html'>报名NLPCC-高性能小模型测评</a>
 
 
