@@ -8,7 +8,12 @@ code Repost from google official code: https://github.com/google-research/electr
 具体使用说明：参考 官方链接
 
 # Electra Chinese tiny模型路径
+## google drive
 electra-tiny <a href='https://drive.google.com/file/d/1UP4byt4-kgenwST0KvyMYNbln6FfaSLp/view?usp=sharing'>google-drive</a>
+## baidu drive
+electra-tiny <a href='https://pan.baidu.com/s/14b-IiCkjRg-6XIYPXnezZA'>baidu-pan</a>
+code:rs99
+
 
 ## 模型说明
 1. 与 tinyBERT 的 配置相同
